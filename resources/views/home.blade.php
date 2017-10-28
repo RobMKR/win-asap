@@ -223,6 +223,12 @@
                                     </span>
                                 @endif
 
+                                @if (Session::has('active'))
+                                    <div class="after-register">
+                                        {{ Session::get('active') }}
+                                    </div>
+                                @endif
+
                             </form>
                         </div>
                     </div>

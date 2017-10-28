@@ -3,8 +3,12 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -39,6 +43,13 @@ class LoginController extends Controller
     }
 
     public function index(Request $request){
+        $user = (new User)->where('email', $request->get('email'))->first();
+
+        if($user && Hash::check($request->get('password'), $user->password) && $user->active == 0){
+            Session::flash('active', "Ձեր պրոֆիլը դեռ ակտիվացված չէ, Դուք կստանաք ակտիվացիայի մասին էլ. փոստ");
+            return back();
+        }
+
         return $this->login($request);
     }
 }
