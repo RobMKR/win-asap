@@ -4,8 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+
 
 class RegisterController extends Controller
 {
@@ -49,8 +54,11 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
+            'surname' => 'required|string|max:255',
+            'phone' => 'required|string|max:12',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'passport' => 'required|image|max:800'
         ]);
     }
 
@@ -62,10 +70,42 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return (new User)->create([
             'name' => $data['name'],
+            'surname' => $data['surname'],
             'email' => $data['email'],
+            'phone' => $data['phone'],
             'password' => bcrypt($data['password']),
+            'passport' => $data['passport']
         ]);
+    }
+
+    protected function saveFile($data){
+        $file = $data['passport'];
+
+        $file_name = Storage::disk('uploads')->put('passport', $file);
+
+        $data['passport'] = '/uploads/' . $file_name;
+
+        return $data;
+    }
+
+    public function index(Request $request){
+
+        $validator = $this->validator($request->all());
+
+        if($validator->fails()){
+            return back()->with(['errors' => $validator->errors()]);
+        }
+
+        $data = $this->saveFile($request->all());
+
+        $user = $this->create($data);
+
+//        $this->guard()->login($user);
+
+        Session::flash('message', "Դուք հաջողությամբ գրանցվեցիք, Դուք կարող եք մուտք գործել համակարգ օգտագործելով Ձեր Էլ. հասցեն և գաղտնաբառը, Ձեր անձնագրի տվյալների հաստատումից հետո");
+
+        return back();
     }
 }

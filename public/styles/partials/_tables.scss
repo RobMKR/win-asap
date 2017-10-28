@@ -1,0 +1,38 @@
+.tableStyle {
+	width: 100%;
+	border-collapse: collapse;
+
+	tr {
+		th {
+			padding: 5px;
+			font-size: 14px;
+
+			&:first-child {
+				border-right: 4px solid #4999D1;
+			}
+		}
+		td {
+			padding: 3px;
+			font-size: 12px;
+
+			&:nth-child(1) {
+				width: 35%;
+			}
+			&:nth-child(2) {
+				width: 20%;
+				border-right: 4px solid #4999D1;
+			}
+			&:nth-child(3) {
+				width: 27%;
+			}
+			&:nth-child(4) {
+				width: 18%;
+			}
+		}
+		td,th {
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid #4999D1;
+		}
+	}
+}
