@@ -12,6 +12,7 @@ body {
 	line-height: 1.4;
     background: url("../assets/images/bg.jpg") no-repeat center center;
     background-size: cover;
+	background-attachment: fixed;
 }
 a {
 	cursor: pointer;
@@ -20,11 +21,6 @@ a {
 }
 input,a,textarea,select,button,span {
 	outline: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
 	font: inherit;
 }
 
@@ -36,6 +32,11 @@ hr {
 
 p {
 	line-height: 1.4;
+}
+
+ol {
+    padding-left: 20px;
+    list-style: decimal;
 }
 
 code {
@@ -59,6 +60,14 @@ code {
 }
 .clear {
 	clear: both;
+}
+
+.checkbox {
+    input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
 }
 
 /* Start Margin Top and Bottom Spaces */

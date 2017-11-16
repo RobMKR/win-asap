@@ -68,7 +68,8 @@ body {
   overflow-x: hidden;
   line-height: 1.4;
   background: url("../assets/images/bg.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 a {
   cursor: pointer;
@@ -77,11 +78,6 @@ a {
 
 input, a, textarea, select, button, span {
   outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
   font: inherit; }
 
 hr {
@@ -91,6 +87,10 @@ hr {
 
 p {
   line-height: 1.4; }
+
+ol {
+  padding-left: 20px;
+  list-style: decimal; }
 
 code {
   color: #5f8ee4;
@@ -111,6 +111,11 @@ code {
 
 .clear {
   clear: both; }
+
+.checkbox input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px; }
 
 /* Start Margin Top and Bottom Spaces */
 .mt-0 {
@@ -1166,15 +1171,51 @@ h5, .h5 {
 .w-100 {
   font-weight: 100; }
 
+.w-bold {
+  font-weight: bold; }
+
 /* Header Styles Import */
+header .logo {
+  width: 200px;
+  margin: 0 auto;
+  height: 62px;
+  line-height: 62px; }
+  header .logo img {
+    width: 100%; }
+header nav ul li {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  text-align: center; }
+  header nav ul li:first-child {
+    padding-left: 0; }
+  header nav ul li:last-child {
+    padding-right: 0; }
+  header nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    min-height: 62px;
+    padding: 10px;
+    border: 2px solid transparent;
+    background-color: #2A3958;
+    transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s; }
+    header nav ul li a:hover, header nav ul li a.active {
+      color: #fff;
+      text-decoration: none;
+      border-color: #fff; }
+
 /* Content Elements Styles Import */
-.flex {
+.flex, header nav ul li a {
   display: flex; }
 
 .wrap {
   flex-wrap: wrap; }
 
-.justify-center {
+.justify-center, header nav ul li a {
   justify-content: center; }
 .justify-start {
   justify-content: flex-start; }
@@ -1185,7 +1226,7 @@ h5, .h5 {
 .justify-space-between {
   justify-content: space-between; }
 
-.align-center {
+.align-center, header nav ul li a {
   align-items: center; }
 .align-flex-start {
   align-items: flex-start; }
@@ -1202,12 +1243,97 @@ h5, .h5 {
 .fullWidth {
   width: 100%; }
 
+.page {
+  height: 100vh; }
+
 .content {
   padding: 30px 15px; }
   .content .box {
     border-radius: 4px;
     background-color: #2A3958;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26); }
+
+.article {
+  padding: 15px; }
+  .article p {
+    margin-top: 10px; }
+
+.whiteHeading {
+  padding: 25px 0;
+  color: #19191a;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff; }
+  .whiteHeading h2 {
+    font-weight: bold; }
+
+.darkHeading {
+  padding: 25px 0;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  background-color: #19191a; }
+  .darkHeading h2 {
+    font-weight: bold; }
+
+.gifts {
+  color: #19191a;
+  background-color: #fff; }
+  .gifts p {
+    font-weight: bold; }
+  .gifts .gift-img {
+    min-height: 75px; }
+  .gifts .orLine {
+    position: relative;
+    text-align: center; }
+    .gifts .orLine::after {
+      content: " ";
+      width: 3px;
+      margin: 10px auto 0;
+      display: block;
+      left: 0;
+      right: 0;
+      height: calc(100% - 50px);
+      position: absolute;
+      top: 25px;
+      background-color: #19191a; }
+
+.countDown {
+  margin-top: 80px; }
+  .countDown h2 {
+    color: #fff;
+    font-size: 30px;
+    font-family: tahoma;
+    padding: 50px 0 20px;
+    font-weight: normal; }
+  .countDown .title {
+    height: 50px;
+    position: relative; }
+    .countDown .title span {
+      display: inline-block;
+      width: 140px;
+      font-size: 20px;
+      font-family: tahoma;
+      color: #fff;
+      line-height: 50px; }
+  .countDown .elements > div {
+    display: inline-block;
+    margin: 20px 10px 0;
+    width: 120px;
+    height: 150px;
+    background: #fff;
+    border-radius: 5px;
+    color: #19191a;
+    line-height: 150px;
+    font-family: tahoma;
+    font-size: 55px; }
+
+.callAction {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background: red;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px; }
 
 /* Form Elements Styles Import */
 .field {
@@ -1251,14 +1377,14 @@ h5, .h5 {
     padding: 3px;
     font-size: 12px; }
     .tableStyle tr td:nth-child(1) {
-      width: 35%; }
+      width: 4%; }
     .tableStyle tr td:nth-child(2) {
-      width: 20%;
+      width: 24%;
       border-right: 4px solid #4999D1; }
     .tableStyle tr td:nth-child(3) {
-      width: 27%; }
+      width: 24%; }
     .tableStyle tr td:nth-child(4) {
-      width: 18%; }
+      width: 24%; }
   .tableStyle tr td, .tableStyle tr th {
     text-align: center;
     vertical-align: middle;
