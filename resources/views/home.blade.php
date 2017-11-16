@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="countDown text-center">
-                        <h2>Mnacel e</h2>
+                        <h2>Մնացել է</h2>
                         <div class="elements">
                             <div class="days">85</div>
                             <div class="hours">22</div>
@@ -33,10 +33,10 @@
                             <div class="seconds">54</div>
                         </div>
                         <div class="title">
-                            <span>Days</span>
-                            <span>Hours</span>
-                            <span>Minutes</span>
-                            <span>Seconds</span>
+                            <span>Օր</span>
+                            <span>Ժամ</span>
+                            <span>Րոպե</span>
+                            <span>Վայրկյան</span>
                         </div>
                     </div>
                 </div>
