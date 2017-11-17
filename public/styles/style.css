@@ -1250,7 +1250,6 @@ header nav ul li {
   padding: 30px 15px; }
   .content .box {
     border-radius: 4px;
-    background-color: #2A3958;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26); }
 
 .article {
@@ -1297,34 +1296,38 @@ header nav ul li {
       background-color: #19191a; }
 
 .countDown {
-  margin-top: 80px; }
+  /*margin-top: 80px; }*/
+  }
   .countDown h2 {
     color: #fff;
     font-size: 30px;
     font-family: tahoma;
-    padding: 50px 0 20px;
-    font-weight: normal; }
+    padding: 20px 0 20px;
+    font-weight: normal;
+  }
   .countDown .title {
     height: 50px;
     position: relative; }
     .countDown .title span {
       display: inline-block;
-      width: 140px;
-      font-size: 20px;
+      width: 100px;
+      font-size: 17px;
       font-family: tahoma;
       color: #fff;
-      line-height: 50px; }
+      line-height: 40px;
+    }
   .countDown .elements > div {
     display: inline-block;
     margin: 20px 10px 0;
-    width: 120px;
-    height: 150px;
+    width: 80px;
+    height: 100px;
     background: #fff;
     border-radius: 5px;
     color: #19191a;
-    line-height: 150px;
+    line-height: 100px;
     font-family: tahoma;
-    font-size: 55px; }
+    font-size: 42px;
+  }
 
 .callAction {
   position: fixed;
