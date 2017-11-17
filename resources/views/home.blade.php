@@ -456,7 +456,7 @@
                                         </div>
                                         <div class="col-md-12 mt-15">
                                             <div class="field {{ $errors->has('email') ? 'invalid' : '' }}">
-                                                <input type="email" name="email" placeholder="Էլ.փոստի հասցե">
+                                                <input type="email" name="email" placeholder="Էլ. փոստի հասցե">
                                             </div>
 
                                             @if($errors->has('email'))
