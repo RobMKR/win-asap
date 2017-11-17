@@ -494,7 +494,7 @@
                                         <div class="col-md-12 mt-15 text-left">
                                             <div class="checkbox flex">
                                                 <input type="checkbox" name="confirm" id="confirm_check">
-                                                <label class="font-xs" for="confirm_check">Ես հաստատում եմ որ հանդիսանում եմ ծխախոտային արտադրանքի սպառող, ՀՀ քաղաքացի և որ լրացելէ իմ 18 տարին</label>
+                                                <label class="font-xs" for="confirm_check">Ես հաստատում եմ, որ հանդիսանում եմ ծխախոտային արտադրանքի սպառող 18 տարին լրացած ՀՀ քաղաքացի</label>
                                             </div>
                                         </div>
                                         <div class="col-md-12 mt-20">
