@@ -512,7 +512,7 @@
                                     </div>
                                     <div class="col-md-5 mt-15 mr-0">
                                         <div class="field">
-                                            <input type="email" name="email" placeholder="Էլ.փոստի հասցե">
+                                            <input type="email" name="email" placeholder="Էլ. փոստի հասցե">
                                         </div>
                                     </div>
                                     <div class="col-md-7 mt-15">
@@ -555,7 +555,7 @@
     <!-- End Content Section -->
 
     <div class="callAction">
-        <span>ԹԵԺ ԳԻԾ 060 665050</span>
+        <span>ԹԵԺ ԳԻԾ՝ 060 665050</span>
     </div>
 
 
