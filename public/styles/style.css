@@ -1243,11 +1243,15 @@ header nav ul li {
 .fullWidth {
   width: 100%; }
 
+.margin-center {
+  margin-left: auto;
+  margin-right: auto; }
+
 .page {
   height: 100vh; }
 
 .content {
-  padding: 30px 15px; }
+  padding: 30px 0px; }
   .content .box {
     border-radius: 4px;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.26); }
@@ -1296,38 +1300,31 @@ header nav ul li {
       background-color: #19191a; }
 
 .countDown {
-  /*margin-top: 80px; }*/
-  }
+  margin-top: 0px; }
   .countDown h2 {
     color: #fff;
     font-size: 30px;
-    font-family: tahoma;
-    padding: 20px 0 20px;
-    font-weight: normal;
-  }
+    padding: 0px 0 20px;
+    font-weight: normal; }
   .countDown .title {
     height: 50px;
     position: relative; }
     .countDown .title span {
       display: inline-block;
-      width: 100px;
-      font-size: 17px;
-      font-family: tahoma;
+      width: 92px;
+      font-size: 16px;
       color: #fff;
-      line-height: 40px;
-    }
+      line-height: 50px; }
   .countDown .elements > div {
     display: inline-block;
     margin: 20px 10px 0;
-    width: 80px;
+    width: 72px;
     height: 100px;
     background: #fff;
     border-radius: 5px;
     color: #19191a;
     line-height: 100px;
-    font-family: tahoma;
-    font-size: 42px;
-  }
+    font-size: 35px; }
 
 .callAction {
   position: fixed;
@@ -1370,6 +1367,7 @@ header nav ul li {
 /* Tables Styles Import */
 .tableStyle {
   width: 100%;
+  min-width: 500px;
   border-collapse: collapse; }
   .tableStyle tr th {
     padding: 5px;
@@ -1380,8 +1378,8 @@ header nav ul li {
     padding: 3px;
     font-size: 12px; }
     .tableStyle tr td:nth-child(1) {
-      width: 4%; }
-    .tableStyle tr td:nth-child(2) {
+      width: 3%; }
+    .tableStyle tr td:nth-child(3) {
       width: 24%;
       border-right: 4px solid #4999D1; }
     .tableStyle tr td:nth-child(3) {
@@ -1392,5 +1390,32 @@ header nav ul li {
     text-align: center;
     vertical-align: middle;
     border: 1px solid #4999D1; }
+
+/* Responsive Styles Import */
+@media (max-width: 991px) {
+  .flex, header nav ul li a {
+    display: flex; }
+    .flex.md, header nav ul li a.md {
+      display: block; } }
+.overflow-x {
+  overflow-x: auto; }
+
+@media (max-width: 600px) {
+  .xs-padd {
+    padding: 0; }
+
+  .xs-padd-15 {
+    padding: 0 15px !important; }
+
+  .countDown .elements > div {
+    margin: 20px 3px 0;
+    width: 60px;
+    height: 85px;
+    line-height: 85px;
+    font-size: 25px; }
+
+  .countDown .title span {
+    width: 66px;
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+@media (max-width: 991px) {
+    .flex {
+        display: flex;
+
+        &.md {
+            display: block;
+        }
+    }
+}
+
+.overflow-x {
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+
+.xs-padd {
+    padding: 0;
+}
+
+.xs-padd-15 {
+    padding: 0 15px !important;
+}
+
+    .countDown .elements > div {
+        margin: 20px 3px 0;
+        width: 60px;
+        height: 85px;
+        line-height: 85px;
+        font-size: 25px;
+    }
+
+    .countDown .title span {
+        width: 66px;
+        font-size: 16px;
+    }
+}
