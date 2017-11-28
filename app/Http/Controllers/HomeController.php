@@ -27,6 +27,21 @@ class HomeController extends Controller
         return view('after_login');
     }
 
+    public function centers()
+    {
+        return view('centers');
+    }
+
+    public function gifts()
+    {
+        return view('gifts');
+    }
+
+    public function rules()
+    {
+        return view('rules');
+    }
+
     public function logout(){
         Auth::logout();
         return redirect('/');

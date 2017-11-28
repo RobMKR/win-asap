@@ -27,3 +27,9 @@ Route::get('/logout', 'HomeController@logout');
 
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/centers', 'HomeController@centers');
+
+Route::get('/gifts', 'HomeController@gifts');
+
+Route::get('/rules', 'HomeController@rules');
