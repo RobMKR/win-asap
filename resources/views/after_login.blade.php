@@ -3,7 +3,7 @@
 @section('content')
 
     <header>
-        <div class="container">
+        <div class="container-md">
             <div class="row pt-20 mb-20">
                 <div class="col-md-12">
                     <div class="logo">
@@ -37,7 +37,7 @@
     <!-- Start Content Section -->
 
     <section class="content">
-        <div class="container">
+        <div class="container-md">
             <div class="row">
                 <div class="col-md-12">
                     <div class="box mt-30">
@@ -48,41 +48,41 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <div class="gifts flex">
-                                    <div class="col-md-6">
+                                <div class="gifts flex md">
+                                    <div class="col-lg-6 col-md-12">
                                         <p class="font-xs pt-10 mb-25">Միջոցառման շրջանակներում տուփ է համարվում ՀՀ-ում սպառման համար նախատեսված, հատուկ ժապավենով փաթեթավորված վաճառքի ներկայացված WINSTON ապրանքանիշի</p>
 
-                                        <div class="flex justify-center">
-                                            <div class="col-md-2">
+                                        <div class="flex justify-center align-center">
+                                            <div class="col-sm-2 col-3">
                                                 <img src="assets/images/gift-phone.png" width="100%" alt="">
                                             </div>
-                                            <div class="col-md-7">
+                                            <div class="col-sm-7 col-8">
                                                 <img src="assets/images/Range-Rover-Evoque.png" width="100%" alt="">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-1 orLine">
+                                    <div class="col-md-1 orLine hidden-md">
                                         <p class="font-xs pt-10 mb-25">kam</p>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-lg-5 col-md-12">
                                         <p class="font-xs pt-10 mb-25">Միջոցառման շրջանակներում տուփ է համարվում ՀՀ-ում սպառման համար նախատեսված, հատուկ ժապավենով փաթեթավորված վաճառքի ներկայացված WINSTON ապրանքանիշի ծխախոտի տուփն իր թափանցիկ թաղանթով։</p>
 
-                                        <div class="flex justify-center text-center">
-                                            <div class="col-md-4">
+                                        <div class="flex justify-center text-center xs-align">
+                                            <div class="col-sm-4 col-8">
                                                 <p class="font-xs pt-10 mb-10">2 japaven + 12 tup</p>
                                                 <div class="gift-img">
                                                     <img src="assets/images/gift-knife.png" width="80px" alt="">
                                                 </div>
                                                 <p class="font-xs pt-10 mb-10">usb krich</p>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-sm-4 col-8">
                                                 <p class="font-xs pt-10 mb-10">2 japaven + 12 tup</p>
                                                 <div class="gift-img">
                                                     <img src="assets/images/gift-usb.png" width="100%" alt="">
                                                 </div>
                                                 <p class="font-xs pt-10 mb-10">usb krich</p>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-sm-4 col-8">
                                                 <p class="font-xs pt-10 mb-10">2 japaven + 12 tup</p>
                                                 <div class="gift-img">
                                                     <img src="assets/images/gift.png" width="45px" alt="">

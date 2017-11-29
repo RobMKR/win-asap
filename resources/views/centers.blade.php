@@ -3,7 +3,7 @@
 @section('content')
 
     <header>
-        <div class="container">
+        <div class="container-md">
             <div class="row pt-20 mb-20">
                 <div class="col-md-12">
                     <div class="logo">
@@ -36,15 +36,15 @@
 
 
     <section class="content">
-        <div class="container">
+        <div class="container-md">
             <div class="row">
                 <div class="col-md-12 text-center mt-25">
                     <h3 class="mb-30">ԱԶԱՏՈՒԹՅԱՆ ՈՒՂԻ ՄԻՋՈՑԱՌՄԱՆ ՆՎԵՐՆԵՐԻ ՍՏԱՑՄԱՆ ԿԵՆՏՐՈՆՆԵՐՆ ԵՆ</h3>
                 </div>
                 <div class="col-md-12">
-                    <div class="">
+                    <div class="overflow-x">
                         <div class="row box">
-                            <div class="col-md-6 col-sm-12 mt-15 mb-15">
+                            <div class="col-lg-6 col-sm-12 mt-15 mb-15">
                                 <table class="tableStyle">
                                     <thead>
                                     <tr class="uppercase">
@@ -80,7 +80,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="col-md-6 col-sm-12 mt-15 mb-15">
+                            <div class="col-lg-6 col-sm-12 mt-15 mb-15">
                                 <table class="tableStyle">
                                     <thead>
                                     <tr class="uppercase">

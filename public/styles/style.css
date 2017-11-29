@@ -58,9 +58,6 @@ table {
   border-spacing: 0; }
 
 /* Start General Styles */
-html, body {
-  height: 100%; }
-
 body {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
@@ -69,7 +66,8 @@ body {
   line-height: 1.4;
   background: url("../assets/images/bg.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 100px; }
 
 a {
   cursor: pointer;
@@ -99,6 +97,13 @@ code {
 
 .container-lg {
   max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative; }
+
+.container-md {
+  max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -1270,7 +1275,7 @@ header nav ul li {
     font-weight: bold; }
 
 .darkHeading {
-  padding: 25px 0;
+  padding: 25px 10px;
   color: #fff;
   border-radius: 5px 5px 0 0;
   background-color: #19191a; }
@@ -1393,10 +1398,24 @@ header nav ul li {
 
 /* Responsive Styles Import */
 @media (max-width: 991px) {
-  .flex, header nav ul li a {
+  .flex, header nav ul li a, .gifts {
     display: flex; }
-    .flex.md, header nav ul li a.md {
-      display: block; } }
+    .flex.md, header nav ul li a.md, .gifts.md {
+      display: block; }
+
+  .hidden-md {
+    display: none; }
+
+  header nav ul li a {
+    font-size: 12px; } }
+@media (max-width: 860px) {
+  header nav ul li {
+    width: 50%;
+    padding: 10px; }
+    header nav ul li:first-child {
+      padding-left: 10px; }
+    header nav ul li:last-child {
+      padding-right: 10px; } }
 .overflow-x {
   overflow-x: auto; }
 
@@ -1416,6 +1435,38 @@ header nav ul li {
 
   .countDown .title span {
     width: 66px;
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .logout-btn {
+    position: relative !important;
+    right: 0px !important;
+    top: 0px !important; }
+    .logout-btn a {
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%;
+      background: #333;
+      padding: 7px;
+      text-align: center; }
+      .logout-btn a:hover {
+        opacity: 0.8; }
+
+  .darkHeading h2 {
+    font-size: 18px; } }
+@media (max-width: 573px) {
+  .xs-align {
+    flex-direction: column;
+    align-items: center; } }
+@media (max-width: 460px) {
+  header nav ul li {
+    width: 100%;
+    padding: 5px 0; }
+    header nav ul li:first-child {
+      padding-left: 0px; }
+    header nav ul li:last-child {
+      padding-right: 0px; }
+    header nav ul li a {
+      min-height: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

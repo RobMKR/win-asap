@@ -3,7 +3,7 @@
 @section('content')
 
     <header>
-        <div class="container">
+        <div class="container-md">
             <div class="row pt-20 mb-20">
                 <div class="col-md-12">
                     <div class="logo">
@@ -19,13 +19,13 @@
                                 <a href="/home">ՄԻՋՈՑԱՌՄԱՆ ՄԱՍՆԱԿՑՈՒԹՅԱՆ ԿԱՐԳ</a>
                             </li>
                             <li>
-                                <a href="/centers" class="active">ՄԻՋՈՑԱՌՄԱՆ ՆՎԵՐՆԵՐԻ ՍՏԱՑՄԱՆ ԿԵՆՏՐՈՆՆԵՐ</a>
+                                <a href="/centers">ՄԻՋՈՑԱՌՄԱՆ ՆՎԵՐՆԵՐԻ ՍՏԱՑՄԱՆ ԿԵՆՏՐՈՆՆԵՐ</a>
                             </li>
                             <li>
                                 <a href="/gifts">ՆՎԵՐՆԵՐ</a>
                             </li>
                             <li>
-                                <a href="/rules">ՄԻՋՈՑԱՌՄԱՆ ԿԱՆՈՆՆԵՐ</a>
+                                <a href="/rules" class="active">ՄԻՋՈՑԱՌՄԱՆ ԿԱՆՈՆՆԵՐ</a>
                             </li>
                         </ul>
                     </nav>
@@ -37,7 +37,7 @@
     <!-- Start Content Section -->
 
     <section class="content">
-        <div class="container">
+        <div class="container-md">
             <div class="row">
                 <div class="col-md-12">
                     <div class="box mt-30">

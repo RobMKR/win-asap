@@ -1,9 +1,46 @@
 @media (max-width: 991px) {
-    .flex {
+    .flex, .gifts {
         display: flex;
 
         &.md {
             display: block;
+        }
+    }
+
+    .hidden-md {
+        display: none;
+    }
+
+    header {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+
+    header {
+        nav {
+            ul {
+                li {
+                    width: 50%;
+                    padding: 10px;
+
+                    &:first-child {
+                        padding-left: 10px;
+                    }
+                    &:last-child {
+                        padding-right: 10px;
+                    }
+                }
+            }
         }
     }
 }
@@ -14,13 +51,13 @@
 
 @media (max-width: 600px) {
 
-.xs-padd {
-    padding: 0;
-}
+    .xs-padd {
+        padding: 0;
+    }
 
-.xs-padd-15 {
-    padding: 0 15px !important;
-}
+    .xs-padd-15 {
+        padding: 0 15px !important;
+    }
 
     .countDown .elements > div {
         margin: 20px 3px 0;
@@ -33,5 +70,63 @@
     .countDown .title span {
         width: 66px;
         font-size: 16px;
+    }
+
+    .logout-btn {
+        position: relative !important;
+        right: 0px !important;
+        top: 0px !important;
+
+        a {
+            display: block;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 100%;
+            background: #333;
+            padding: 7px;
+            text-align: center;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .darkHeading h2 {
+        font-size: 18px;
+    } 
+}
+
+
+@media (max-width: 573px) {
+
+    .xs-align {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 460px) {
+
+    header {
+        nav {
+            ul {
+                li {
+                    width: 100%;
+                    padding: 5px 0;
+
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+
+                    a {
+                        min-height: 50px;
+                    }
+                }
+            }
+        }
     }
 }
