@@ -15,6 +15,7 @@
                 <th>Անձնագիր</th>
                 <th>Ակտիվացված</th>
                 <th></th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -29,6 +30,7 @@
                         <td><div class="image" style="width: 100px;"><a href="{{$_user->passport}}" target="_blank"><img style="width: 100%;" src="{{$_user->passport}}" alt=""></a></div></td>
                         <td>{{$_user->active}}</td>
                         <td >{!! !$_user->active ? '<a style="color: #fff" href="/admin/activate/' . $_user->id . '">Ակտիվացնել</a>' : '<a style="color: #fff" href="/admin/deactivate/' . $_user->id . '">Դեակտիվացնել</a>'  !!}</td>
+                        <td ><a style="color: #fff" href="/admin/delete/{{$_user->id}}">Հեռացնել</a></td>
                         <?php $i++; ?>
                     </tr>
                 @endforeach

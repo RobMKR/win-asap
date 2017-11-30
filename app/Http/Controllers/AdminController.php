@@ -19,12 +19,14 @@ class AdminController extends Controller
     public function activate(Request $request, $id){
         User::where('id', $id)->update(['active' => 1]);
 
-        $to = User::find($id)->email;
+        $user = User::find($id);
 
-        Mail::send('email.activate', ['title' => 'Ձեր պրոֆիլն ակտիվացված է'], function ($message) use ($to)
+        $to = $user->email;
+
+        Mail::send('email.activate', ['title' => 'Ձեր պրոֆիլն ակտիվացված է' , 'user_name' => $user->name . ' ' . $user->surname], function ($message) use ($to)
         {
             $message->from('freedomroad@winston.am', 'Winston');
-            $message->subject('Freedom Road');
+            $message->subject('Winston.am registration confirmation');
             $message->to($to);
         });
 
@@ -33,6 +35,23 @@ class AdminController extends Controller
 
     public function deactivate(Request $request, $id){
         User::where('id', $id)->update(['active' => 0]);
+        return back();
+    }
+
+    public function delete(Request $request, $id){
+        $user = User::find($id);
+
+        $to = $user->email;
+
+        Mail::send('email.delete', ['user_name' => $user->name . ' ' . $user->surname], function ($message) use ($to)
+        {
+            $message->from('freedomroad@winston.am', 'Winston');
+            $message->subject('Winston.am registration confirmation');
+            $message->to($to);
+        });
+
+        $user->delete();
+
         return back();
     }
 }

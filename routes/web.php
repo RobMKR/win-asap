@@ -18,6 +18,7 @@ Route::group(['middleware' => 'superadmin'], function(){
     Route::get('/admin', 'AdminController@dashboard');
     Route::get('/admin/activate/{id}', 'AdminController@activate');
     Route::get('/admin/deactivate/{id}', 'AdminController@deactivate');
+    Route::get('/admin/delete/{id}', 'AdminController@delete');
 });
 
 
