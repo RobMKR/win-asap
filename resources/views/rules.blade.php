@@ -7,7 +7,7 @@
             <div class="row pt-20 mb-20">
                 <div class="col-md-12">
                     <div class="logo">
-                        <img src="assets/images/winston-logo.svg" alt="logo">
+                        <img src="assets/images/winston-logo.png" alt="logo">
                     </div>
                 </div>
             </div>

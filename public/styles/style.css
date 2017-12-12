@@ -1182,7 +1182,7 @@ h5, .h5 {
 /* Header Styles Import */
 header .logo {
   width: 200px;
-  margin: 0 auto;
+  margin: 10px auto 30px;
   height: 62px;
   line-height: 62px; }
   header .logo img {
@@ -1418,6 +1418,9 @@ header nav ul li {
       padding-right: 10px; } }
 .overflow-x {
   overflow-x: auto; }
+.overflow-x .box {
+  margin: 0;
+}
 
 @media (max-width: 600px) {
   .xs-padd {

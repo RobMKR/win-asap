@@ -7,7 +7,7 @@
             <div class="row pt-20 mb-20">
                 <div class="col-md-12">
                     <div class="logo">
-                        <img src="assets/images/winston-logo.svg" alt="logo">
+                        <img src="assets/images/winston-logo.png" alt="logo">
                     </div>
                 </div>
             </div>
@@ -67,27 +67,27 @@
                                     <div class="col-lg-5 col-md-12">
                                         <p class="font-xs pt-10 mb-25">Միջոցառման շրջանակներում տուփ է համարվում ՀՀ-ում սպառման համար նախատեսված, հատուկ ժապավենով փաթեթավորված վաճառքի ներկայացված WINSTON ապրանքանիշի ծխախոտի տուփն իր թափանցիկ թաղանթով։</p>
 
-                                        <div class="flex justify-center text-center xs-align">
+                                        <div class="flex justify-center text-center xs-align pt-30">
                                             <div class="col-sm-4 col-8">
-                                                <p class="font-xs pt-10 mb-10">2 japaven + 12 tup</p>
+                                                <p class="font-xs pt-10 mb-10">2 ժապավեն + 6 տուփ</p>
                                                 <div class="gift-img">
                                                     <img src="assets/images/gift-knife.png" width="80px" alt="">
                                                 </div>
-                                                <p class="font-xs pt-10 mb-10">usb krich</p>
+                                                <p class="font-xs pt-10 mb-10">ԲԱԶՄԱՖՈՒՆԿՑԻՈՆԱԼ ԳՈՐԾԻՔ</p>
                                             </div>
                                             <div class="col-sm-4 col-8">
-                                                <p class="font-xs pt-10 mb-10">2 japaven + 12 tup</p>
+                                                <p class="font-xs pt-10 mb-10">4 Ժապավեն + 12 տուփ</p>
                                                 <div class="gift-img">
                                                     <img src="assets/images/gift-usb.png" width="100%" alt="">
                                                 </div>
-                                                <p class="font-xs pt-10 mb-10">usb krich</p>
+                                                <p class="font-xs pt-10 mb-10">USB ԿՐԻՉ</p>
                                             </div>
                                             <div class="col-sm-4 col-8">
-                                                <p class="font-xs pt-10 mb-10">2 japaven + 12 tup</p>
+                                                <p class="font-xs pt-10 mb-10">6 Ժապավեն + 18 տուփ</p>
                                                 <div class="gift-img">
                                                     <img src="assets/images/gift.png" width="45px" alt="">
                                                 </div>
-                                                <p class="font-xs pt-10 mb-10">usb krich</p>
+                                                <p class="font-xs pt-10 mb-10">ԼԻՑՔԱՎՈՐԻՉ</p>
                                             </div>
                                         </div>
                                     </div>
