@@ -24,16 +24,22 @@ $(document).ready(function() {
 				min %= 60;
 				sec %= 60;
 
-				hur = (hur < 10) ? "0" + hur : hur;
-				min = (min < 10) ? "0" + min : min;
-				sec = (sec < 10) ? "0" + sec : sec;
+				// hur = (hur < 10) ? "0" + hur : hur;
+				// min = (min < 10) ? "0" + min : min;
+				// sec = (sec < 10) ? "0" + sec : sec;
+
+				hur = 0;
+				min = 0;
+				sec = 0;
+				day = 0;
 
 				$('.seconds').text(sec);
 				$('.minutes').text(min);
 				$('.hours').text(hur);
 				$('.days').text(day);
 
-				setTimeout(countdown, 1000);
+
+				// setTimeout(countdown, 1000);
 			}
 
 			countdown();
