@@ -9,7 +9,7 @@ $(document).ready(function() {
 			function countdown() {
 
 				var now = new Date();
-				var eventDate = new Date(2017, 11, 17, 22, 0);
+				var eventDate = new Date(2018, 0, 21, 22, 0);
 				var currentTime = now.getTime();
 				var evenTime = eventDate.getTime();
 
@@ -24,14 +24,9 @@ $(document).ready(function() {
 				min %= 60;
 				sec %= 60;
 
-				// hur = (hur < 10) ? "0" + hur : hur;
-				// min = (min < 10) ? "0" + min : min;
-				// sec = (sec < 10) ? "0" + sec : sec;
-
-				hur = 0;
-				min = 0;
-				sec = 0;
-				day = 0;
+				hur = (hur < 10) ? "0" + hur : hur;
+				min = (min < 10) ? "0" + min : min;
+				sec = (sec < 10) ? "0" + sec : sec;
 
 				$('.seconds').text(sec);
 				$('.minutes').text(min);
@@ -39,7 +34,7 @@ $(document).ready(function() {
 				$('.days').text(day);
 
 
-				// setTimeout(countdown, 1000);
+				setTimeout(countdown, 1000);
 			}
 
 			countdown();
