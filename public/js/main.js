@@ -9,7 +9,7 @@ $(document).ready(function() {
 			function countdown() {
 
 				var now = new Date();
-				var eventDate = new Date(2018, 0, 21, 22, 0);
+				var eventDate = new Date(2017, 11, 30, 22, 0);
 				var currentTime = now.getTime();
 				var evenTime = eventDate.getTime();
 

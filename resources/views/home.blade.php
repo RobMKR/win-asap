@@ -56,7 +56,7 @@
                                             <thead>
                                             <tr class="uppercase">
                                                 <th colspan="3">ՆՎԵՐՆԵՐԻ ՍՏԱՑՄԱՆ <br> ԿԵՆՏՐՈՆՆԵՐ</th>
-                                                <th colspan="2">Աշխատանքային գրաֆիկ <br> 31.10.2017 - 21.01.2018</th>
+                                                <th colspan="2">Աշխատանքային գրաֆիկ <br> 31.10.2017 - 30.12.2017</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -404,7 +404,7 @@
                                 </div>
 
                                 <div class="col-md-12 text-center mt-15 mb-30">
-                                    <h3>Միջոցառմանը կարող եք մասնակցել մինչև 21.01.2018 թ․-ը ներառյալ</h3>
+                                    <h3>Միջոցառմանը կարող եք մասնակցել մինչև 30.12.2017 թ․-ը ներառյալ</h3>
                                 </div>
                             </div>
                         </div>
@@ -562,5 +562,5 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/main.js?v=4"></script>
+    <script src="js/main.js?v=5"></script>
 @endsection
